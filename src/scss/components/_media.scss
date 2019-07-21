@@ -39,4 +39,41 @@
         font-size: 13px;
         line-height: 18px;
     }
+    .service-card{
+        max-width: 270px;
+        &__content{
+            margin-left: 20px;
+            max-width: 230px;
+        }
+        &__tittle{
+            font-size: 18px;
+            line-height: 21px;
+        }
+        &__text{
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &__links{
+            font-size: 11px;
+            line-height: 15px;
+        }
+
+    }
+    .servicies{
+        &__picblock{
+            max-width: 320px;
+        }
+        &__title{
+            font-size: 22px;
+            line-height: 25px;
+        }
+        &__title2{
+            font-size: 22px;
+            line-height: 25px;
+        }
+        &__text{
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
 }

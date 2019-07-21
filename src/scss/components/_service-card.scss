@@ -4,8 +4,11 @@
  background: #FFFFFF;
 box-shadow: 0px 0px 40px rgba(118, 157, 202, 0.15);
 border-radius: 10px;
+&__pic{
+    width: 100%;
+}
 &__content{
-    width: 340px;
+    max-width: 340px;
     margin-left: 40px;
 }
 &__title{
