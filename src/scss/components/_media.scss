@@ -1,0 +1,42 @@
+@media (max-width:768px){
+    .header{
+        &__logo{
+            transform: scale(0.8);
+        }
+        &__number{
+            
+            display: none;
+        }
+        &__button{
+            display: none;
+        }
+        
+    }
+    .nav{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+
+    .our-story{
+        &__title{
+            font-size: 28px;
+            line-height: 32px;
+        }
+        &__text{
+            font-size: 15px;
+            line-height: 25px;
+        }  
+        &__links{
+            display: none;
+        }
+        
+    }
+    .blue-button{
+        width: 240px;
+        height: 40px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+}

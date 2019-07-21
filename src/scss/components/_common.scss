@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+       
+    &__link{
+        margin-right:30px;
+        
+        &:hover{
+            text-decoration: underline;
+            text-decoration-color: #056CDE;
+           
+           
+            
+        }
+     
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+
+.yellow-button{
+    background: #FFCE51;
+    border-radius: 10px;
+    width: 210px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #3A4959;
+}
+.blue-button{
+    background: #056CDE;
+    border-radius: 10px;
+    width: 310px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+
+.container{
+    margin: 0 auto;
+    width: 1220px;
+    padding:20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.links{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    @mixin links($x) {
+        width: 30px;
+        height: 30px;
+        background: url("./img/sprite.png");
+        background-position-y: -68px;
+        background-position-x: ($x*(-30)) + px;
+
+    }
+    &__p{
+        @include links(0);
+        margin-right: 10px;
+    }
+    &__insta{
+        @include links(1);
+        margin-right: 10px;
+    }
+    &__twiter{
+        @include links(2);
+        margin-right: 10px;
+    }
+    &__facebook{
+        @include links(3);
+    }
+}
