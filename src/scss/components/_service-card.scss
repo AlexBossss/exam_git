@@ -1,12 +1,15 @@
 .service-card{
  max-width: 450px;
+ height: 470px;
  background: #FFFFFF;
 box-shadow: 0px 0px 40px rgba(118, 157, 202, 0.15);
 border-radius: 10px;
 &__content{
-    max-width: 340px;
+    width: 340px;
+    margin-left: 40px;
 }
 &__title{
+    padding-top: 30px;;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -19,6 +22,7 @@ border-radius: 10px;
     color: #3A4959;
     }
     &__text{
+        padding-top: 20px;
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: normal;
@@ -28,11 +32,12 @@ border-radius: 10px;
         color: #3A4959;
     }
     &__links{
+        padding-top: 20px;;
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: normal;
         font-size: 13px;
-        line-height: 18px;
+        line-height: 28px;
         /* identical to box height */
 
         text-transform: uppercase;

@@ -34,7 +34,7 @@
         }
     }
     &__text{
-        font-family: Open Sans;
+        font-family: 'Open Sans';
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -63,22 +63,21 @@
             margin-bottom: 30px;
         }
     }
-    &__cards{
-        grid-column-start: 1;
-        grid-column-end: -1;
-    }
-    &__med-card1{
+    &__row1{
+        
         grid-column-start: 2;
         grid-column-end: 7;
-        margin-bottom: 50px;
-
     }
-    &__med-card2{
+    &__row2{
         grid-column-start: 7;
         grid-column-end: -1;
+       
     }
-    &__med-card3{
-        grid-column-start: 2;
-        grid-column-end: 7;
+    &__med-card1{
+        margin-bottom: 50px;;
     }
+    &__med-card2{
+        margin-top: 180;
+    }
+  
 }
